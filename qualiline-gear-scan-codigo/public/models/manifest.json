@@ -1,0 +1,44 @@
+{
+  "mode": "onnx",
+  "inputSize": 224,
+  "minConfidence": 0.8,
+  "minMargin": 0.09,
+  "maxEntropy": 0.55,
+  "maxEnergy": -0.9,
+  "minConfidenceByModel": {
+    "model_a": 0.52,
+    "model_b": 0.48,
+    "model_c": 0.52,
+    "model_d": 0.66
+  },
+  "minMarginByModel": {
+    "model_a": 0.03,
+    "model_b": 0.02,
+    "model_c": 0.03,
+    "model_d": 0.1
+  },
+  "revision": "1791540900-d-sep",
+  "labels": [
+    "model_a",
+    "model_b",
+    "model_c",
+    "model_d",
+    "empty"
+  ],
+  "classifierPath": "/models/classifier.onnx",
+  "embeddingPath": "/models/embedder.onnx",
+  "prototypesPath": "/models/prototypes.json",
+  "thresholds": {
+    "model_a": 0.26,
+    "model_b": 0.32,
+    "model_c": 0.28,
+    "model_d": 0.16
+  },
+  "classNames": {
+    "model_a": "Modelo A",
+    "model_b": "Modelo B",
+    "model_c": "Modelo C",
+    "model_d": "Modelo D",
+    "empty": "Fundo vazio"
+  }
+}

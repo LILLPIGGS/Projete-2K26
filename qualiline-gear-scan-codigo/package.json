@@ -1,0 +1,39 @@
+{
+  "name": "engrenagem-visao",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0 --port 43127",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0 --port 43127",
+    "lint": "next lint",
+    "train:synth": "python3 training/scripts/make_synthetic_dataset.py",
+    "train:classifier": "python3 training/scripts/train_classifier.py",
+    "train:anomaly": "python3 training/scripts/train_anomaly.py",
+    "train:export": "python3 training/scripts/export_browser.py",
+    "tutorial:record": "node scripts/record-tutorial-videos.mjs"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^1.47.0",
+    "next": "^16.3.6",
+    "onnxruntime-web": "^1.30.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.7.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20.19.43",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.0",
+    "playwright": "^1.49.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
